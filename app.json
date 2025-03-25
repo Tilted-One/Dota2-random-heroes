@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Dota 2 Random Heroes",
+    "slug": "Dota2-random-heroes",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFFFF10"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "Dota2-Random-Hero",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "38bebe98-a358-47a2-be43-4dad1b272539"
+      }
+    }
+  }
+}
