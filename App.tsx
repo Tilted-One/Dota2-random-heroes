@@ -58,7 +58,7 @@ export default function App() {
               </Pressable>
             </View>
             {randomHero &&
-              <View style={styles.heroContainer}>
+              <View style={styles.heroContainer} >
                 <Hero randomHero={randomHero} />
               </View>
             }
