@@ -1,6 +1,13 @@
 import { View, Text, Pressable, Image, StyleSheet, Alert } from 'react-native'
 import Button from './Button'
-export default function Type(props: any) {
+
+
+type AttributeProps = {
+    selectedAttribute: string;
+    setSelectedAttribute: (attribute: string) => void;
+};
+
+export default function Type(props: AttributeProps) {
 
     return (
         <View style={styles.container}>

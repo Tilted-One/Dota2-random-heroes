@@ -1,17 +1,25 @@
 import { View, Text, Image, StyleSheet } from 'react-native'
 
 
-export default function Hero(props: any) {
+type HeroProps = {
+    randomHero: {
+        localized_name: string;
+        img: string;
+    };
+};
+
+export default function Hero(props: HeroProps) {
     return (
         <View style={styles.container}>
             <View style={styles.textContainer}>
                 <Text style={styles.text}>{props.randomHero.localized_name}</Text>
             </View>
-            <Image src={`https://cdn.akamai.steamstatic.com/${props.randomHero.img}`}
+            <Image
+                src={`https://cdn.akamai.steamstatic.com/${props.randomHero.img}`}
                 style={styles.image}
-            ></Image>
+            />
         </View>
-    )
+    );
 }
 
 const styles = StyleSheet.create({

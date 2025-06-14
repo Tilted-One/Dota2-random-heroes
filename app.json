@@ -19,12 +19,6 @@
         "ITSAppUsesNonExemptEncryption": false
       }
     },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
-    },
     "web": {
       "favicon": "./assets/favicon.png"
     },
@@ -32,6 +26,12 @@
       "eas": {
         "projectId": "38bebe98-a358-47a2-be43-4dad1b272539"
       }
+    },
+    "plugins": [
+      "expo-build-properties"
+    ],
+    "android": {
+      "package": "com.Dota2RandomHero"
     }
   }
 }
