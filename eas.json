@@ -11,6 +11,10 @@
       "environment": "preview"
     },
     "production": {
+      "env": {
+        "API_URL": "https://your-api.com",
+        "SECRET_KEY": "your-secret"
+      },
       "environment": "production"
     },
     "my-profile": {
