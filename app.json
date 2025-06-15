@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Dota 2 Random Heroes",
-    "slug": "Dota2-random-heroes",
+    "name": "dota2-random-heroes",
+    "slug": "dota2-random-heroes",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -22,16 +22,34 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "extra": {
-      "eas": {
-        "projectId": "38bebe98-a358-47a2-be43-4dad1b272539"
-      }
-    },
     "plugins": [
-      "expo-build-properties"
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34
+          },
+          "ios": {
+            "deploymentTarget": "15.1"
+          }
+        }
+      ]
     ],
     "android": {
       "package": "com.Dota2RandomHero"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c398cf50-4138-4a2a-a3b4-b42f6f397437"
+      }
+    },
+    "owner": "tilted_one",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/c398cf50-4138-4a2a-a3b4-b42f6f397437"
     }
   }
 }

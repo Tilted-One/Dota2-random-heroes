@@ -7,8 +7,15 @@ import Attribute from './components/Attribute'
 import Position from './components/Position';
 
 export default function App() {
-  const [randomHero, setrandomHero] = useState<string | null>(null)
-  const [data, setData] = useState([])
+  interface HeroData {
+    attack_type: string;
+    primary_attr: string;
+    roles: string[];
+    [key: string]: any; // for other properties you don't use directly
+  }
+
+  const [randomHero, setrandomHero] = useState<HeroData | null>(null)
+  const [data, setData] = useState<HeroData[]>([])
   const [selectedType, setSelectedType] = useState<string | null>(null)
   const [selectedAttribute, setSelectedAttribute] = useState<string | null>(null)
   const [selectedPosition, setSelectedPosition] = useState<string | null>(null)
